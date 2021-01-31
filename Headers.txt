@@ -1,0 +1,38 @@
+Request Headers:
+User-Agent: Software product used by original client. Eg: User-Agent: PostmanRuntime
+
+Accept: Informs the server about the types of data that can be sent back.
+
+Postman-Token: If an XmlHttpRequest is pending and another request is sent with the same parameters then some browsers 
+returning the same response for both of them. Sending a random token avoids this. This can also help you distinguish 
+between requests on the server side.
+
+Host: Specifies the domain name of the server (for virtual hosting), and (optionally) the TCP port number on which the server is listening.
+
+Accept-Encoding: The encoding algorithm, usually a compression algorithm, that can be used on the resource sent back.
+Connection: Controls whether the network connection stays open after the current transaction finishes.
+
+Response Headers:
+Content-Type: Indicates the media type of the resource.
+
+Vary: Determines how to match request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server.
+
+Content-Encoding: Used to specify the compression algorithm.
+
+Date: Contains the date and time at which the message was originated.
+
+Server: The Server header describes the software used by the origin server that handled the request — that is, the server that generated the response.
+
+Cache-Control: holds directives (instructions) for caching in both requests and responses. A given directive in a request does not mean the same directive 
+should be in the response.
+
+X-XSS-Protection: is a feature of Internet Explorer, Chrome and Safari that stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+
+X-Frame-Options:  can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>. 
+Sites can use this to avoid click-jacking attacks, by ensuring that their content is not embedded into other sites.
+
+X-Content-Type-Options:  is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed.
+
+Alt-Svc:  is used to advertise alternative services through which the same resource can be reached. An alternative service is defined by a protocol/host/port combination.
+
+Transfer-Encoding: is generally used to break the response into smaller parts with the Transfer-Encoding: chunked value. It allows for streaming of response to the client instead of one big payload.
